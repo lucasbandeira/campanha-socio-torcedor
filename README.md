@@ -4,7 +4,7 @@ Que Fornece macanismo para cadastro de campanhas para sócio-torcedores.
 
 *Ao cadastrar uma campanha o sistema verifica se existem cmapanhas dentro do mesmo período caso positivo soma um dias na data de termino. O sistema também verifica se há campanha com o mesmo ternimo e caso positivo adiciona mais um dia.
 
-Para completude do sistema é necessário a integração com o serviço de cadastro de usuário, para o mesmo se associar a uma campanha
+Para completude do sistema é necessário a integração com o serviço de cadastro de usuário, para que o usuario se associe a uma campanha
 
 ### GET /campanhas
 [image lista](https://drive.google.com/file/d/1dM_VmtGEtnQU_e9sMvVF_7NsiesDlBU1/view?usp=sharing)
