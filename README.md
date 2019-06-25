@@ -7,20 +7,17 @@ Que Fornece macanismo para cadastro de campanhas para sócio-torcedores.
 Para completude do sistema é necessário a integração com o serviço de cadastro de usuário, para o mesmo se associar a uma campanha
 
 ### GET /campanhas
-```
-[a link](https://drive.google.com/file/d/1dM_VmtGEtnQU_e9sMvVF_7NsiesDlBU1/view?usp=sharing)
+[image lista](https://drive.google.com/file/d/1dM_VmtGEtnQU_e9sMvVF_7NsiesDlBU1/view?usp=sharing)
 
-```
+
 ### GET /campanha/:id
-```
-[a link](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
+[image detalhe](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
 
-```
+
 ### POST /campanha
-```
-[a link](https://drive.google.com/file/d/1qeJLD1nE4fEjVL9qhLVt2jr0t1Aiv2fQ/view?usp=sharing)
+[image create](https://drive.google.com/file/d/1qeJLD1nE4fEjVL9qhLVt2jr0t1Aiv2fQ/view?usp=sharing)
 
-```
+
 ### DELETE /campanha/:id
 ```
 localhost:8080/campanha/{id}
