@@ -7,11 +7,11 @@ Que Fornece macanismo para cadastro de campanhas para sócio-torcedores.
 Para completude do sistema é necessário a integração com o serviço de cadastro de usuário, para que o usuario se associe a uma campanha
 
 ### GET /campanhas
-[image lista](https://drive.google.com/file/d/1dM_VmtGEtnQU_e9sMvVF_7NsiesDlBU1/view?usp=sharing)
+[image lista](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
 
 
 ### GET /campanha/:id
-[image detalhe](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
+[image detalhe](https://drive.google.com/file/d/1dM_VmtGEtnQU_e9sMvVF_7NsiesDlBU1/view?usp=sharing)
 
 
 ### POST /campanha
