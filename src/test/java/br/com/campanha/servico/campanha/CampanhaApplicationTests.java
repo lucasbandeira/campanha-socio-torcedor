@@ -12,8 +12,6 @@ import com.jayway.restassured.RestAssured;
 
 import static org.hamcrest.Matchers.hasItems;
 
-//Para rodar o teste é necessario subir a aplicação e remover o @Ignore
-//@Ignore
 public class CampanhaApplicationTests {
 
 	@BeforeClass
