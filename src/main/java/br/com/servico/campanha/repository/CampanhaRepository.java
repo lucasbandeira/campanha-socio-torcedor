@@ -40,7 +40,7 @@ public interface CampanhaRepository extends Repository <Campanha, Long> {
 	Campanha save(Campanha campanha);
 	
 	/**
-	 * Método que remove uma Campanha.
+	 * Método que remove uma Campanha por id.
 	 * 
 	 * @param id
 	 * @return Campanha removida

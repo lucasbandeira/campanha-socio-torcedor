@@ -3,6 +3,7 @@ package br.com.servico.campanha.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -54,7 +55,7 @@ public class CampanhaController {
 	 * @return Campanha
 	 */
 	@PostMapping("/campanha")
-	Campanha criarCampanha (@RequestBody Campanha novaCampanha) {
+	ResponseEntity<Campanha> criarCampanha (@RequestBody Campanha novaCampanha) {
 		if(campanhaBO.validarPeriodo(novaCampanha)) {
 			
 			List<Campanha> listaCampanhasDoPeriodo = campanhaBO
@@ -66,19 +67,28 @@ public class CampanhaController {
 				campanhaRepository.save(campanhaDoPeriodo);
 			}
 			
-			if(!campanhaRepository.findByDataFinal(novaCampanha.getDataFinal()).isEmpty()) {
-				Campanha campanhaDoMesmoData = campanhaRepository
-						.findByDataFinal(novaCampanha.getDataFinal()).get(0);
-				
-				campanhaDoMesmoData.setDataFinal(campanhaDoMesmoData.getDataFinal().plusDays(1));
-				campanhaRepository.save(campanhaDoMesmoData);
+			List<Campanha> listaCampanhaMesmaDataFinal = campanhaRepository.findByDataFinal(novaCampanha.getDataFinal());
+			if(!listaCampanhaMesmaDataFinal.isEmpty()) {
+				somarUmaDiaNasCampanhasComMesmaData(listaCampanhaMesmaDataFinal);
 			}
 			
-			return campanhaRepository.save(novaCampanha);
+			return ResponseEntity.ok().body(campanhaRepository.save(novaCampanha));
 		}
 		
-		return null;
+		return ResponseEntity.badRequest().body(null);
 		
+	}
+
+	private void somarUmaDiaNasCampanhasComMesmaData(List<Campanha> listaCampanhaMesmoDataFinal) {
+		
+		int quantidade = listaCampanhaMesmoDataFinal.size();
+		for (Campanha campanha : listaCampanhaMesmoDataFinal) {
+			while(quantidade > 1) {
+				campanha.setDataFinal(campanha.getDataFinal().plusDays(quantidade-1));
+				campanhaRepository.save(campanha);
+				quantidade--;
+			}
+		}
 	}
 	
 	/**
@@ -87,7 +97,5 @@ public class CampanhaController {
 	@DeleteMapping("/campanha/{id}")
 	void removerCampanha(@PathVariable Long id) {
 		campanhaRepository.deleteById(id);
-	}
-	
-	
+	}	
 }
