@@ -70,6 +70,24 @@ Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesm
  ```
 
 O sistema também fornece o serviço para que o usuario se associe a uma campanha do seu time
+```
+    /**
+     * Cenário: Eu quero associar novas campanhas a um usuário, já cadastrado, acordo com as regras de négocio 
+     * 
+     * Dado que tenha um usuários cadastrado com o seu time de coração
+     * Então associo o usuario em todas as campanhas do seu respectivo time.
+     * E verifico que as campanha cadastradas foram retornadas
+     */
+	@Test
+	public void testaAssociacaoDeCampanhasPorUsuario() {
+		
+		//Dada a requisição de associacao do usuario de identificador 1 (primero parametro), cujo time do coração possui identificador 1 (segundo parametro).
+		//Então realizo o cadastramento com sucesso
+		given()
+        .when().post("/associar/1/1")
+        .then().body("nome", hasItems("x", "y", "z")).statusCode(200);
+    }
+```
 
 ### GET /campanhas
 [imagem da lista de campanhas](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
