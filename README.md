@@ -68,7 +68,7 @@ Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesm
 	}
  ```
 
-Para completude do sistema é necessário a integração com o serviço de cadastro de usuário, para que o usuario se associe a uma campanha
+O sistema também fornece o serviço para que o usuario se associe a uma campanha
 
 ### GET /campanhas
 [image lista](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
