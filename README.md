@@ -71,6 +71,8 @@ Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesm
 
 O sistema também fornece o serviço para que o usuario se associe a uma campanha do seu time
 [imagem do cenário](https://drive.google.com/file/d/1bTvf0e-c5F6Qah98Y81CuaTlf0jZMgBq/view?usp=sharing)
+
+(* Para a criação de um usuário, sócio torcedor, será utilizado o seguinte serviço [link](https://github.com/lucasbandeira/cadastro-socio-torcedor) )
 ```
     /**
      * Cenário: Eu quero associar novas campanhas a um usuário, já cadastrado, acordo com as regras de négocio 
