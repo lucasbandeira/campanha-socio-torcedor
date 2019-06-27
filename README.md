@@ -70,6 +70,7 @@ Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesm
  ```
 
 O sistema também fornece o serviço para que o usuario se associe a uma campanha do seu time
+[imagem do cenário](https://drive.google.com/file/d/1bTvf0e-c5F6Qah98Y81CuaTlf0jZMgBq/view?usp=sharing)
 ```
     /**
      * Cenário: Eu quero associar novas campanhas a um usuário, já cadastrado, acordo com as regras de négocio 
@@ -103,6 +104,6 @@ O sistema também fornece o serviço para que o usuario se associe a uma campanh
 
 ### DELETE /campanha/:id
 ```
-localhost:8080/campanha/{id}
+[imagem da remoção de uma campanha](https://drive.google.com/file/d/1b8nSAeOqhwaYEkdoL4u6_2zshsEUjGSx/view?usp=sharing)
 
 ```
