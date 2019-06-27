@@ -11,8 +11,8 @@ Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesm
      * Dado que sejam cadastradas 3 campanhas com as seguintes datas de vencimento: 
      * 03/07/2019, 02/07/2019 e 03/07/2019
      * Então verifico se as mesmas foram cadastradas
-     * E verifico se as campanhas com datas do mesmo período de virgencia foram incrementadas e 
-     * as com mesma data de validade também foram incrementadas.
+     * E verifico se as campanhas com datas do mesmo período de virgencia foram incrementadas 
+     * e as com mesma data de validade também foram incrementadas.
      */
     @SuppressWarnings("serial")
 	@Test
