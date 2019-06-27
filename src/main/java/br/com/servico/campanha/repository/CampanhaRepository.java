@@ -22,7 +22,21 @@ public interface CampanhaRepository extends Repository <Campanha, Long> {
 	 */
 	Campanha findById(Long id);
 	
-	List<Campanha> findByDataFinal(LocalDate data);
+	/**
+	 * Método que retorna uma lista de Campanhas pela dataFinal.
+	 * 
+	 * @param dataFinal
+	 * @return lista de Campanhas pela dataFinal
+	 */
+	List<Campanha> findByDataFinal(LocalDate dataFinal);
+	
+	/**
+	 * Método que retorna uma lista de Campanhas pelo idTime.
+	 * 
+	 * @param idTime
+	 * @return lista de Campanhas pelo idTime
+	 */
+	List<Campanha> findByTimeId(Long idTime);
 	
 	/**
 	 * Método que retorna uma todas as Campanhas
