@@ -69,7 +69,7 @@ Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesm
 	}
  ```
 
-O sistema também fornece o serviço para que o usuario se associe a uma campanha
+O sistema também fornece o serviço para que o usuario se associe a uma campanha do seu time
 
 ### GET /campanhas
 [imagem da lista de campanhas](https://drive.google.com/file/d/1aUQ__EljETYh3r1nggIq6Cy3vxZ6GMmW/view?usp=sharing)
