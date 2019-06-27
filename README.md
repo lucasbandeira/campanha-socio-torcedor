@@ -103,7 +103,5 @@ O sistema também fornece o serviço para que o usuario se associe a uma campanh
 
 
 ### DELETE /campanha/:id
-```
 [imagem da remoção de uma campanha](https://drive.google.com/file/d/1b8nSAeOqhwaYEkdoL4u6_2zshsEUjGSx/view?usp=sharing)
 
-```
