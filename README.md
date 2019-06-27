@@ -2,7 +2,7 @@
 API REST campanhas de sócio-torcedor
 Que Fornece macanismo para cadastro de campanhas para sócio-torcedores.
 
-Ao cadastrar uma campanha o sistema verifica se existem cmpanhas dentro do mesmo período caso positivo soma um dias na data de termino. O sistema também verifica se há campanha com o mesmo ternimo e caso positivo adiciona mais um dia.
+Ao cadastrar uma campanha o sistema verifica se existem campanhas dentro do mesmo período caso positivo soma um dias na data de termino. O sistema também verifica se há campanha com o mesmo ternimo e caso positivo adiciona mais um dia.
  Para melhor endendimento segue o cénario de teste implementado:
  ```
      /**
